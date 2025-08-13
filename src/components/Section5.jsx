@@ -11,10 +11,10 @@ const Section5 = () => {
     useGSAP(()=>{
         gsap.from('.card',{
             x:-2000,
-            duration:1.8,
+            duration:1.12,
             opacity:0,
             ease:'power3.inOut',
-            stagger:0.3,
+            stagger:0.2,
             scrollTrigger:{
                 trigger:'.reviews',
                 start:"top 50%",

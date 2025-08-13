@@ -1,5 +1,5 @@
 import React from 'react'
-import SmoothScroll from './components/SmoothScroll'
+import { ReactLenis, useLenis } from 'lenis/react'
 
 import Topsection from './components/Topsection'
 import Navbar from './components/Navbar'
@@ -13,7 +13,14 @@ import { Link } from 'react-router-dom'
 
 const App = () => {
   return (
-    <SmoothScroll>
+    <ReactLenis root
+      options={{
+        lerp: 0.07,      
+        duration: 1.5,   
+        smoothTouch: true, 
+        smoothWheel: true 
+      }}
+    >
 
       {/* page 1*/}
       <section className="page1 h-auto md:h-[100vh] w-[100vw] px-8">
@@ -22,7 +29,7 @@ const App = () => {
         {/* navbar */}
         <Navbar />
         {/* hero section */}
-        <div className="hero-section mt-[8rem] md:0 md:h-screen w-full flex md:flex-row flex-col md:items-end justify-center pb-8 md:pb-20">
+        <div className="hero-section mt-[8rem] md:mt-1 md:h-full w-full flex md:flex-row flex-col md:items-end justify-center pb-8 md:pb-20">
           <div className='flex md:flex-row flex-col items-end'>
             <div className="hero-text w-full md:w-[77%] text-balance pb-4">
               <h1>Premium Digital Design & Intelligent Solutions</h1>
@@ -74,7 +81,7 @@ const App = () => {
         <Link to='https://www.anujbelsare.tech/' className='text-[3vw] mb-22 md:mb-4 md:text-[2vw] font-medium text-zinc-500'><em>Made by Anuj Belsare</em></Link>
       </footer>
 
-    </SmoothScroll>
+    </ReactLenis>
   )
 }
 

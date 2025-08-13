@@ -12,8 +12,8 @@ const Section4 = () => {
         gsap.from(container.current,{
             y:100,
             opacity:0,
-            duration:1.5,
-            ease: "power3.out",
+            duration:2,
+            ease: "none",
             scrollTrigger:{
                 trigger:'.page4',
                 start: "top top",

@@ -17,17 +17,16 @@ const Section2 = () => {
 
         const tween = gsap.to(text, {
             x: getScrollAmount,
-            duration: 0.5,
-            ease: "linear",
+            ease: "none",
         });
 
         ScrollTrigger.create({
             trigger: ".page2",
             start: "top top",
-            end: () => `+=${getScrollAmount() * -1}`,
+            end: () => `+=${(getScrollAmount() * -1)+2}`,
             pin: true,
             animation: tween,
-            scrub: true,
+            scrub: 1,
             invalidateOnRefresh: true,
         });
 
