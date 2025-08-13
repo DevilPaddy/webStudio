@@ -38,7 +38,7 @@ const Section2 = () => {
 
     return (
         <>
-            <section className="page2 overflow-hidden w-screen h-screen flex items-center">
+            <section className="page2 overflow-hidden w-screen h-[60vh] md:h-screen flex items-center">
                 <video
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 src="/bgVideo.mp4"

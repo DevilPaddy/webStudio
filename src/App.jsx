@@ -16,13 +16,13 @@ const App = () => {
     <SmoothScroll>
 
       {/* page 1*/}
-      <section className="page1 h-[100vh] w-[100vw] px-8">
+      <section className="page1 h-auto md:h-[100vh] w-[100vw] px-8">
         {/* top section */}
         <Topsection />
         {/* navbar */}
         <Navbar />
         {/* hero section */}
-        <div className="hero-section h-screen w-full flex md:flex-row flex-col md:items-end justify-center pb-20">
+        <div className="hero-section mt-[8rem] md:0 md:h-screen w-full flex md:flex-row flex-col md:items-end justify-center pb-8 md:pb-20">
           <div className='flex md:flex-row flex-col items-end'>
             <div className="hero-text w-full md:w-[77%] text-balance pb-4">
               <h1>Premium Digital Design & Intelligent Solutions</h1>
