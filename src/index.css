@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+#root {
+  --primery-text-color: #eeeeee;
+  --secondary-text-color: #c7c7c7;
+  --ternary-text-color: #141414;
+}
+
+html,
+body {
+  background: #000000;
+  color: var(--secondary-text-color);
+  font-family: "Helvetica Now Display", sans-serif;
+  overflow-x: hidden;
+  scrollbar-width: 1px;
+  scrollbar-color: red;
+
+}
+
+.hero-section .hero-text h1 {
+  color: var(--primery-text-color);
+  font-size: 8.0534vw;
+  font-weight: 400;
+  line-height: 6.624rem;
+  letter-spacing: -0.02em;
+}
+
+.para {
+  color: var(--secondary-text-color);
+  font-size: 1.314vw;
+  font-weight: 400;
+  line-height: 1.25rem;
+  word-spacing: -0.01px;
+}
+
+.atag {
+  color: var(--secondary-text-color);
+  font-size: 1.04vw;
+  font-weight: 700;
+}
+
+.titles {
+  color: var(--primery-text-color);
+  font-size: 4.0954vw;
+  font-weight: 400;
+  line-height: 3.685rem;
+}
+
+.sub-title {
+  font-size: 3.31vw;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
+.nav-bar {
+  background: #44444435;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid #ededed26;
+}
+
+.break {
+  width: 100vw;
+  height: 3px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+}
+
+.service {
+  position: relative;
+  padding: 1rem;
+  padding-left: 2rem;
+  border-bottom: 2px solid #1d1d1d;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service::after {
+  content: '';
+  position: absolute;
+  bottom: 45%;
+  right: 6%;
+  width: 24vw;
+  height: 20vw;
+  z-index: 99;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+  border-radius: 12px;
+}
+
+.service:nth-child(1)::after {
+  background-image: url(/custom.jpg);
+}
+
+.service:nth-child(2)::after {
+  background-image: url(/web.jpg);
+}
+
+.service:nth-child(3)::after {
+  background-image: url(/application.jpg);
+}
+
+.service:nth-child(4)::after {
+  background-image: url(/iot.jpg);
+}
+
+.service:hover::after {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.service:hover {
+  background: #141313;
+  color: var(--primery-text-color);
+
+}
+
+.client-review {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  padding: 2vw;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-wrap: wrap;
+  gap: 2rem;
+  background: #5e5b5b9d;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px #59595947;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid #7979796e;
+  z-index: 90;
+}
+
+
+
+.para1 {
+  color: var(--secondary-text-color);
+  font-size: 1.314vw;
+  font-weight: 400;
+}
+
+.atag1 {
+  color: #696464;
+  font-size: 1.914vw;
+  font-weight: 400;
+  line-height: 1.25rem;
+  word-spacing: -0.01px;
+}
+
+.atag1 {
+  position: relative;
+}
+
+.atag1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  left: 0;
+  bottom: -30%;
+  background: #666666;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.atag1:hover::after {
+  opacity: 1;
+}
+
+.para2 {
+  font-size: 2.394vw;
+  font-weight: 600;
+  line-height: 2.25rem;
+  color: var(--secondary-text-color);
+}
+
+.brand-logo {
+  font-size: 4.645vw;
+  font-weight: 700;
+  color: #666666;
+}
+
+.big-font {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  color: var(--primery-text-color);
+  font-size: 13.954vw;
+  line-height: 10.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section .hero-text h1 {
+    font-size: 11.9534vw;
+    line-height: 2.7rem;
+  }
+
+  .para {
+    font-size: 4.834vw;
+  }
+
+  .titles {
+    font-size: 6.361vw;
+  }
+
+  .sub-title {
+    font-size: 3.81vw;
+    font-weight: 700;
+  }
+
+  .atag {
+    font-size: 3.053vw;
+  }
+
+  .service {
+    padding: .5rem;
+    padding-left: .9rem;
+  }
+
+  .para1 {
+    font-size: 3.3vw;
+  }
+
+  .client-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .75rem;
+  }
+
+  .brand-logo {
+    font-size: 12.645vw;
+  }
+
+  .para2 {
+    font-size: 6.394vw;
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+
+  .big-font {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-size: 15.954vw;
+    line-height: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .atag1 {
+    font-size: 4.053vw;
+    line-height: .95rem;
+    word-spacing: -0.01px;
+  }
+}
