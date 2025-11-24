@@ -4,7 +4,7 @@ const Topsection = () => {
     return (
         <div className="top-nav pt-2 flex items-center justify-between">
             <Link to='/' className="logo">
-                <h1 className='text-[3.9vw] md:text-[1.0432vw] font-bold text-[#eeeeee]'>QUALSOFT</h1>
+                <h1 className='text-[3.9vw] md:text-[1.0432vw] font-bold text-[#eeeeee]'>AQUILA</h1>
             </Link>
 
             <Link to='/' className="contact">
